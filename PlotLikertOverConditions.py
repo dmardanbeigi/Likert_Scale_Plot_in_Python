@@ -1,3 +1,9 @@
+'''
+Created on March 20, 2017
+
+@author: Diako Mardanbegi <d.mardanbegi@lancaster.ac.uk>
+'''
+
 import seaborn as sns
 import matplotlib.patches as patches
 import pandas as pd
