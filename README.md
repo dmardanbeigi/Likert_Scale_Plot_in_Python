@@ -3,3 +3,4 @@
 
 Find examples in the "How to Use.ipynb" file
 
+Likert_Scale_Plot_in_Python/example.png
