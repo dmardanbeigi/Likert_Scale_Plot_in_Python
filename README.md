@@ -9,6 +9,6 @@ pip install -r requirements.txt
 
 Find examples in the "How to Use.ipynb" file
 
-![My image](Likert_Scale_Plot_in_Python/example.png)
+![My image](https://github.com/dmardanbeigi/Likert_Scale_Plot_in_Python/blob/version2/example.png)
 
 
