@@ -66,7 +66,7 @@ def PlotLikertOverConditions(tb,nPoint,customLikertRange=None,tb2=None,customLik
         temp2.columns = temp2.columns.droplevel(level=1)
 #         print temp2
         df_conds.append( temp2)
-        middles_all.append(temp2[LikertRange[:len(LikertRange)/2]].sum(axis=1)+temp2[len(LikertRange)/2+1]*.5)
+        middles_all.append(temp2[LikertRange[:len(LikertRange)//2]].sum(axis=1)+temp2[len(LikertRange)//2+1]*.5)
 
     
     ##--------------------------------------------------------------------
@@ -86,7 +86,7 @@ def PlotLikertOverConditions(tb,nPoint,customLikertRange=None,tb2=None,customLik
         temp2=temp2.loc[:,range(1,nPoint+1)] 
 #         print temp2
         df_conds_generals= temp2
-        middles_all_generals=temp2[LikertRange[:len(LikertRange)/2]].sum(axis=1)+temp2[len(LikertRange)/2+1]*.5
+        middles_all_generals=temp2[LikertRange[:len(LikertRange)//2]].sum(axis=1)+temp2[len(LikertRange)//2+1]*.5
 
 
     ##--------------------------------------------------------------------
@@ -112,7 +112,7 @@ def PlotLikertOverConditions(tb,nPoint,customLikertRange=None,tb2=None,customLik
 
         shift=SHIFT(len(df_conds),cond)
         
-        for j in xrange(len(patch_handles)):
+        for j in range(len(patch_handles)):
             for i, p in enumerate(patch_handles[j].get_children()):
                 
                 
@@ -173,7 +173,7 @@ def PlotLikertOverConditions(tb,nPoint,customLikertRange=None,tb2=None,customLik
         patch_handles.append(df_conds_generals.plot.barh(ax=ax,stacked=True, color=likert_colors, legend=False,
                                             width=barwidth,edgecolor='white'))   
 
-        for j in xrange(len(patch_handles)):
+        for j in range(len(patch_handles)):
             for i, p in enumerate(patch_handles[j].get_children()):
 
 
