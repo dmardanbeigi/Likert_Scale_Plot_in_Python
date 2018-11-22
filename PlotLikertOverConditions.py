@@ -265,6 +265,6 @@ def PlotLikertOverConditions(tb,nPoint,customLikertRange=None,tb2=None,customLik
             
         ax.text(x+0.2,y,v[1],fontsize = 8,zorder = 6, color = 'white',horizontalalignment='left',
                     bbox={'edgecolor':'none','facecolor':likert_colors[-1], 'alpha':1.0, 'pad':2})  
-        
-
+    plt.tight_layout()
+    plt.savefig('example.png')
     plt.show()
